@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>T có điều muốn nói...</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #9ad7ff, #fad0c4);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      h1 {
+        font-size: 2em;
+        color: #fff;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+        background-color: #6b7aff;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #4759ff;
+        transform: scale(1.05);
+      }
+
+      #message {
+        margin-top: 40px;
+        font-size: 1.8em;
+        color: rgb(0, 0, 0);
+        display: none;
+        animation: fadeIn 2s forwards;
+        text-align: center;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nhấn vào đây đi, t có điều muốn nói</h1>
+    <button onclick="showLove()">Bấm vào nè</button>
+    <div id="message"></div>
+
+    <script>
+      function showLove() {
+        const msg = document.getElementById("message");
+        msg.innerHTML = "Ph...Phương <br> M là đồ thúiiii:)))";
+        msg.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
